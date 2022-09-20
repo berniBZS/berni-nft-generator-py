@@ -2,38 +2,36 @@
   "layers": [
     {
       "name": "Background",
-      "values": ["Blue", "Orange", "Purple", "Red", "Yellow"],
-      "trait_path": "./trait-layers/backgrounds",
-      "filename": ["blue", "orange", "purple", "red", "yellow"],
-      "weights": [20,20,20,20,20]
+      "values": ["Berry", "Yellow", "Cyan", "Wine Cosmos", "Unlockd Universe", "Archaic Binary", "Fuchsia", "Azure Lightning", "Ancient Binary", "Teal Scrapyard", "Blue", "Violet Factory", "Plum Scrapyard", "Sapphire Scrapyard", "Lilac Lightning", "Rusty Factory", "Lavender Cosmos", "Blood Cosmos"],
+      "trait_path": "./trait-layers/Backgrounds",
+      "filename": ["Berry", "Yellow", "Cyan", "Wine Cosmos", "Unlockd Universe", "Archaic Binary", "Fuchsia", "Azure Lightning", "Ancient Binary", "Teal Scrapyard", "Blue", "Violet Factory", "Plum Scrapyard", "Sapphire Scrapyard", "Lilac Lightning", "Rusty Factory", "Lavender Cosmos", "Blood Cosmos"],
+      "weights": [9, 9, 9, 3, 1, 2, 9, 4.5, 2, 7, 9, 5.5, 7, 7, 4.5, 5.5, 3, 3]
     },
     {
-      "name": "Foreground",
-      "values": ["Python Logo", "Python Logo 2", "Python Logo 3", "Python Logo 4", "Python Logo 5"],
-      "trait_path": "./trait-layers/foreground",
-      "filename": ["logo", "logo", "logo", "logo", "logo"],
-      "weights": [20,20,20,20,20]
+      "name": "Head",
+      "values": ["Golden Custodian", "Golden Mastermind", "Custodian", "Golden Enlightened", "Enlightened", "Mastermind", "Golden Operator", "Operator"],
+      "trait_path": "./trait-layers/Heads",
+      "filename": ["Golden Custodian", "Golden Mastermind", "Custodian", "Golden Enlightened", "Enlightened", "Mastermind", "Golden Operator", "Operator"],
+      "weights": [2, 0.75, 31.50, 0.25, 16.50, 21.50, 1, 26.50]
     },
     {
-      "name": "Branding",
-      "values": ["A Name", "Another Name"],
-      "trait_path": "./trait-layers/text",
-      "filename": ["text", "text"],
-      "weights": [50, 50]
-    }
-  ],
-  "incompatibilities": [
+      "name": "Body",
+      "values": ["Gold", "Sentinel", "Ancient", "Freezer", "Steampunk", "ironclad", "0x220907", "Guardian", "Gadgeto", "Assimov", "Businessbot", "Multitasker", "Buzzer", "Chunky", "Pumpking", "Turing", "Diamond"],
+      "trait_path": "./trait-layers/Bodies",
+      "filename": ["Gold", "Sentinel", "Ancient", "Freezer", "Steampunk", "ironclad", "0x220907", "Guardian", "Gadgeto", "Assimov", "Businessbot", "Multitasker", "Buzzer", "Chunky", "Pumpking", "Turing", "Diamond"],
+      "weights": [1, 10, 3, 7.25, 5, 10, 5, 10, 7.25, 3, 5, 7.25, 7.25, 5, 3, 10, 1]
+    },
     {
-      "layer": "Background",
-      "value": "Blue",
-      "incompatible_with": ["Python Logo 2"],
-      "default": {
-        "value": "Default Incompatibility",
-        "filename": "./trait-layers/foreground/logo"
-      }
+      "name": "Eyes",
+      "values": ["Dumbfounded", "Chill", "Tilted", "Evil", "questionmark", "Happy", "Surprised", "Baked", "Mad", "Outraged", "Lifeline", "Angry", "Expectant"],
+      "trait_path": "./trait-layers/Eyes",
+      "filename": ["Dumbfounded", "Chill", "Tilted", "Evil", "questionmark", "Happy", "Surprised", "Baked", "Mad", "Outraged", "Lifeline", "Angry", "Expectant"],
+      "weights": [5, 8.5, 8.5, 2.5, 1, 12.5, 9.5, 9.5, 8.5, 8.5, 5, 8.5, 12.5]
     }
+
   ],
+  "incompatibilities": [],
   "baseURI": ".",
-  "name": "NFT #",
-  "description": "This is a description for this NFT series."
+  "name": "Lockey#",
+  "description": "Unlockd"
 }

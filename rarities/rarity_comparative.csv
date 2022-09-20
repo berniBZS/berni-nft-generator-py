@@ -1,0 +1,57 @@
+,category,name,expected,generated,difference
+0,BACKGROUND,Plum Scrapyard,210,198,-6%
+1,BACKGROUND,Berry,270,227,-18%
+2,BACKGROUND,Violet Factory,165,173,4%
+3,BACKGROUND,Blue,270,260,-3%
+4,BACKGROUND,Lilac Lightning,135,138,2%
+5,BACKGROUND,Teal Scrapyard,210,206,-1%
+6,BACKGROUND,Archaic Binary,60,77,22%
+7,BACKGROUND,Cyan,270,264,-2%
+8,BACKGROUND,Yellow,270,282,4%
+9,BACKGROUND,Unlockd Universe,30,35,14%
+10,BACKGROUND,Fuchsia,270,253,-6%
+11,BACKGROUND,Blood Cosmos,90,88,-2%
+12,BACKGROUND,Ancient Binary,60,65,7%
+13,BACKGROUND,Azure Lightning,135,150,10%
+14,BACKGROUND,Sapphire Scrapyard,210,204,-2%
+15,BACKGROUND,Rusty Factory,165,173,4%
+16,BACKGROUND,Wine Cosmos,90,100,10%
+17,BACKGROUND,Lavender Cosmos,90,107,15%
+18,BODY,Businessbot,150,156,3%
+19,BODY,Guardian,300,297,-1%
+20,BODY,Sentinel,300,277,-8%
+21,BODY,Diamond,30,33,9%
+22,BODY,Multitasker,217,194,-11%
+23,BODY,Freezer,217,217,0%
+24,BODY,Buzzer,217,223,2%
+25,BODY,Pumpking,90,96,6%
+26,BODY,ironclad,300,273,-9%
+27,BODY,0x220907,150,175,14%
+28,BODY,Gadgeto,217,247,12%
+29,BODY,Turing,300,283,-6%
+30,BODY,Steampunk,150,150,0%
+31,BODY,Ancient,90,85,-5%
+32,BODY,Assimov,90,94,4%
+33,BODY,Chunky,150,156,3%
+34,BODY,Gold,30,44,31%
+35,HEAD,Mastermind,645,643,0%
+36,HEAD,Enlightened,495,548,9%
+37,HEAD,Custodian,945,894,-5%
+38,HEAD,Operator,795,785,-1%
+39,HEAD,Golden Mastermind,22,26,15%
+40,HEAD,Golden Custodian,60,61,1%
+41,HEAD,Golden Operator,30,32,6%
+42,HEAD,Golden Enlightened,7,11,36%
+43,EYES,Chill,255,226,-12%
+44,EYES,Outraged,255,246,-3%
+45,EYES,Surprised,285,295,3%
+46,EYES,Dumbfounded,150,152,1%
+47,EYES,Happy,375,341,-9%
+48,EYES,Expectant,375,353,-6%
+49,EYES,Mad,255,243,-4%
+50,EYES,Tilted,255,272,6%
+51,EYES,Baked,285,293,2%
+52,EYES,Angry,255,281,9%
+53,EYES,Evil,75,83,9%
+54,EYES,Lifeline,150,173,13%
+55,EYES,questionmark,30,42,28%

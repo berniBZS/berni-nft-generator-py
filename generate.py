@@ -4,6 +4,7 @@ import argparse
 import random
 import json
 import os
+from rarities.slim_rarity_comparator import *
 
 from lib.util.io import loadJSON, pathExists
 
@@ -110,24 +111,24 @@ def generate_unique_images(amount, config):
   for layer in config["layers"]:
     all_token_rarity.append({ layer["name"]: Counter(image[layer["name"]] for image in all_images) })
 
-  with open('./metadata/all-rarity.json', 'w') as outfile:
+  with open('./rarities/all-rarity.json', 'w') as outfile:
     json.dump(all_token_rarity, outfile, indent=4)
 
   
   # v1.0.2 addition
-  print("\nUnique NFT's generated. After uploading images to IPFS, please paste the CID below.\nYou may hit ENTER or CTRL+C to quit.")
-  cid = input("IPFS Image CID (): ")
-  if len(cid) > 0:
-    if not cid.startswith("ipfs://"):
-      cid = "ipfs://{}".format(cid)
-    if cid.endswith("/"):
-      cid = cid[:-1]
-    for i, item in enumerate(all_images):
-      with open('./metadata/' + str(item["tokenId"]) + '.json', 'r') as infile:
-        original_json = json.loads(infile.read())
-        original_json["image"] = original_json["image"].replace(config["baseURI"]+"/", cid+"/")
-        with open('./metadata/' + str(item["tokenId"]) + '.json', 'w') as outfile:
-          json.dump(original_json, outfile, indent=4)
+  # print("\nUnique NFT's generated. After uploading images to IPFS, please paste the CID below.\nYou may hit ENTER or CTRL+C to quit.")
+  # cid = input("IPFS Image CID (): ")
+  # if len(cid) > 0:
+  #   if not cid.startswith("ipfs://"):
+  #     cid = "ipfs://{}".format(cid)
+  #   if cid.endswith("/"):
+  #     cid = cid[:-1]
+  #   for i, item in enumerate(all_images):
+  #     with open('./metadata/' + str(item["tokenId"]) + '.json', 'r') as infile:
+  #       original_json = json.loads(infile.read())
+  #       original_json["image"] = original_json["image"].replace(config["baseURI"]+"/", cid+"/")
+  #       with open('./metadata/' + str(item["tokenId"]) + '.json', 'w') as outfile:
+  #         json.dump(original_json, outfile, indent=4)
 
 
 
@@ -143,8 +144,33 @@ generator.add_argument('-c', '--config', help="Path to configuration file")
 args = generator.parse_args()
 
 if args.amount and args.config:
+
+  # AQUÍ ESTÁ LA CHICHA -------------
   if pathExists(args.config):
-    generate_unique_images(int(args.amount), loadJSON(args.config))
+
+    loop = True
+
+    while loop:
+
+      mypath = "images"
+      for root, dirs, files in os.walk(mypath):
+        for file in files:
+          os.remove(os.path.join(root, file))
+      mypath = "metadata"
+      for root, dirs, files in os.walk(mypath):
+        for file in files:
+          os.remove(os.path.join(root, file))
+
+      generate_unique_images(int(args.amount), loadJSON(args.config))
+
+      expected = json.load(open('rarities/expected-rarity.json'))
+      generated = json.load(open('rarities/all-rarity.json'))
+
+      loop, status = check_loop(expected, generated)
+
+      print(status)
+
+
   else:
     print('generator: error: Configuration file specified doesn\'t exist.\n')
 

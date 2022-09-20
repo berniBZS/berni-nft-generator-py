@@ -1,0 +1,74 @@
+[
+    {
+        "Background": {
+            "Plum Scrapyard": 210,
+            "Berry": 270,
+            "Violet Factory": 165,
+            "Blue": 270,
+            "Lilac Lightning": 135,
+            "Teal Scrapyard": 210,
+            "Archaic Binary": 60,
+            "Cyan": 270,
+            "Yellow": 270,
+            "Unlockd Universe": 30,
+            "Fuchsia": 270,
+            "Blood Cosmos": 90,
+            "Ancient Binary": 60,
+            "Azure Lightning": 135,
+            "Sapphire Scrapyard": 210,
+            "Rusty Factory": 165,
+            "Wine Cosmos": 90,
+            "Lavender Cosmos": 90
+        }
+    },
+    {
+        "Head": {
+            "Mastermind": 645,
+            "Enlightened": 495,
+            "Custodian": 945,
+            "Operator": 795,
+            "Golden Mastermind": 22,
+            "Golden Custodian": 60,
+            "Golden Operator": 30,
+            "Golden Enlightened": 7
+        }
+    },
+    {
+        "Body": {
+            "Businessbot": 150,
+            "Guardian": 300,
+            "Sentinel": 300,
+            "Diamond": 30,
+            "Multitasker": 217,
+            "Freezer": 217,
+            "Buzzer": 217,
+            "Pumpking": 90,
+            "ironclad": 300,
+            "0x220907": 150,
+            "Gadgeto": 217,
+            "Turing": 300,
+            "Steampunk": 150,
+            "Ancient": 90,
+            "Assimov": 90,
+            "Chunky": 150,
+            "Gold": 30
+        }
+    },
+    {
+        "Eyes": {
+            "Chill": 255,
+            "Outraged": 255,
+            "Surprised": 285,
+            "Dumbfounded": 150,
+            "Happy": 375,
+            "Expectant": 375,
+            "Mad": 255,
+            "Tilted": 255,
+            "Baked": 285,
+            "Angry": 255,
+            "Evil": 75,
+            "Lifeline": 150,
+            "questionmark": 30
+        }
+    }
+]
