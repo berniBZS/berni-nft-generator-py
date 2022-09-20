@@ -4,3 +4,7 @@ metadata/*.json
 images/*.png
 .ipynb_checkpoints/
 *.pyc
+venv
+/venv
+venv/
+/venv/
